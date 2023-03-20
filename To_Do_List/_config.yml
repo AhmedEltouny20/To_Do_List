@@ -1,13 +1,1 @@
-title: Your awesome title
-author:
-  name: GitHub User
-  email: your-email@domain.com
 
-
-# Build settings
-
-theme: minima
-
-plugins:
-  - jekyll-feed
-  - jekyll-seo-tag
