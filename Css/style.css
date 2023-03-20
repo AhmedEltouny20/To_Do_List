@@ -1,0 +1,160 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+html {
+  font-size: 62.5%;
+  padding: 0 auto;
+}
+
+body {
+  background-color: #00ccb4;
+  color: #f9f9f9;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-size: 1.8rem;
+  gap: 3rem;
+}
+.head-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.toDo {
+  margin: 0 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 30rem;
+  padding: 1.5rem;
+  background-color: #fff;
+  border-radius: 10px;
+  color: #000505;
+}
+h1 {
+  margin-top: auto;
+}
+
+.tasks {
+  margin: 0 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  padding: 1.5rem;
+  background-color: #fff;
+  border-radius: 10px;
+  color: #000505;
+}
+h3 {
+  margin-bottom: 2rem;
+}
+
+.task {
+  padding: 1.3rem 1.9rem;
+  margin: 2rem;
+  background-color: #f7f7f7;
+  width: 100%;
+  display: flex;
+  border-radius: 10px;
+  cursor: grab;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  gap: 5px;
+}
+
+button {
+  display: inline-block;
+  text-align: center;
+}
+
+.btn-add {
+  background-color: #00964d;
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+  color: #f7f7f7;
+  cursor: pointer;
+  padding: 1.2rem;
+}
+.btn-edit {
+  width: 30px;
+  height: 30px;
+  border: none;
+}
+
+.btn-delet {
+  width: 30px;
+  height: 30px;
+  border: none;
+}
+.icon-edit {
+  stroke: #228be6;
+  height: 3rem;
+  width: 3rem;
+  cursor: pointer;
+}
+.icon-delet {
+  stroke: red;
+  height: 3rem;
+  width: 3rem;
+  cursor: pointer;
+}
+input {
+  width: 100%;
+  border-radius: 9px;
+  border: none;
+  padding: 1rem;
+  outline: none;
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+footer {
+  margin-top: auto;
+  margin-bottom: 1.5rem;
+  font-size: 1.4rem;
+}
+/* a:link a:hover {
+  text-decoration: none;
+}
+a:visited a:focus {
+  text-decoration: none;
+} */
+
+.dragging {
+  opacity: 0.5;
+  /* background-color: #008777; */
+}
+.dragover {
+  background-color: #69db7c;
+}
+@media (max-width: 34em) {
+  html {
+    font-size: 23%;
+  }
+
+  .head-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    gap: 2.5rem;
+  }
+  .toDo {
+    width: 80vh;
+  }
+
+  .tasks {
+    width: 100%;
+  }
+  input {
+    font-size: 2.8rem;
+    font-weight: normal;
+  }
+}
